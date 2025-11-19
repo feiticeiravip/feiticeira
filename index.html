@@ -3,175 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Feiticeira VIP Bet - A melhor banca de apostas online. Acesse a Feiticeira VIP para apostas esportivas, cassino e mais. Banca Feiticeira VIP com promoções exclusivas.">
-    <meta name="keywords" content="feiticeira vip, banca feiticeira vip, apostas online, bet vip, cassino online, apostas esportivas">
-    <meta name="author" content="Feiticeira VIP Bet">
+    <title>Banca Feiticeira.Vip - Credibilidade e confiança!</title>
+    <meta name="description" content="Banca Feiticeira Vip - A banca mais confiável do Brasil. Credibilidade, pagamentos rápidos e as melhores odds. Feiticeira Vip é a escolha dos vencedores!">
+    <meta name="keywords" content="feiticeira vip, banca feiticeira vip, feiticeira vip bet, feiticeiravipbet, cassino online, apostas esportivas, banca confiável, melhor banca 2025">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Feiticeira VIP Bet - Banca de Apostas Premium">
-    <meta property="og:description" content="Descubra a Feiticeira VIP, a banca de apostas VIP com as melhores odds e promoções. Acesse agora!">
+    <meta property="og:title" content="Banca Feiticeira.Vip - Credibilidade e confiança!">
+    <meta property="og:description" content="A banca mais confiável do Brasil. Pagamentos instantâneos e suporte 24h.">
+    <meta property="og:image" content="https://feiticeiravipbet.com.br/icon.webp">
+    <meta property="og:url" content="https://feiticeiravipbet.com.br">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://feiticeiravipbet.com.br/">
-    <meta property="og:image" content="https://feiticeiravipbet.com.br/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://feiticeiravipbet.com.br/">
-    <title>Feiticeira VIP Bet - Banca Feiticeira VIP</title>
+    <link rel="canonical" href="https://feiticeiravipbet.com.br">
+    <link rel="icon" href="icon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="icon.webp">
 
-    <!-- FAVICONS (máxima compatibilidade 2025) -->
-    <link rel="icon" type="image/webp" href="https://feiticeiravipbet.com.br/icon.webp">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://feiticeiravipbet.com.br/icon.webp">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://feiticeiravipbet.com.br/icon.webp">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://feiticeiravipbet.com.br/icon.webp">
-    <link rel="manifest" href="/manifest.json"> <!-- opcional, mas recomendado -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Banca Feiticeira Vip",
+      "url": "https://feiticeiravipbet.com.br",
+      "logo": "https://feiticeiravipbet.com.br/icon.webp",
+      "description": "Banca de apostas esportivas e cassino online com credibilidade e confiança total.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-83-99337-0071",
+        "contactType": "Suporte ao Cliente"
+      }
+    }
+    </script>
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            height: 100vh;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
+        body, html {margin:0;padding:0;height:100%;overflow:hidden;font-family:Arial,sans-serif;}
+        #main-iframe {position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:1;}
+        #whatsapp-btn {
+            position:fixed;bottom:20px;right:20px;background:#25D366;color:white;
+            width:60px;height:60px;border-radius:50%;display:flex;align-items:center;
+            justify-content:center;font-size:30px;box-shadow:0 4px 15px rgba(0,0,0,0.4);
+            z-index:1000;text-decoration:none;
         }
-
-        #iframe-container {
-            flex: 1;
-            position: relative;
+        #overlay {
+            position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.96);
+            display:none;flex-direction:column;align-items:center;justify-content:center;
+            z-index:9999;color:white;text-align:center;padding:20px;box-sizing:border-box;
         }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        #overlay img {max-width:90%;max-height:40vh;margin-bottom:30px;border-radius:15px;}
+        #overlay .access-btn {
+            background:#FFD700;color:#000;padding:18px 50px;font-size:26px;font-weight:bold;
+            border:none;border-radius:12px;text-decoration:none;box-shadow:0 8px 20px rgba(0,0,0,0.5);
+            transition:0.3s;
         }
-
-        /* Botões flutuantes */
-        .fab-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 9999;
-        }
-
-        .fab-main {
-            width: 65px;
-            height: 65px;
-            background: #007bff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-            transition: all 0.3s;
-        }
-
-        .fab-main img {
-            width: 40px;
-            height: 40px;
-        }
-
-        .fab-main:hover { transform: scale(1.1); }
-
-        .fab-menu {
-            position: absolute;
-            bottom: 80px;
-            right: 0;
-            display: none;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .fab-item {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-            transition: transform 0.3s;
-        }
-
-        .fab-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .fab-item:hover { transform: scale(1.15); }
-
-        .fab-container.active .fab-menu { 
-            display: flex; 
-            animation: fadeIn 0.4s; 
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @media (max-width: 768px) {
-            .fab-main, .fab-item { width: 55px; height: 55px; }
-            .fab-main img { width: 35px; height: 35px; }
+        #overlay .access-btn:hover {transform:scale(1.05);}
+        #overlay .close-btn {
+            position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.2);
+            color:white;width:50px;height:50px;border-radius:50%;font-size:34px;
+            display:flex;align-items:center;justify-content:center;cursor:pointer;
         }
     </style>
 </head>
 <body>
 
-    <div id="iframe-container">
-        <iframe 
-            src="https://app.feiticeira.vip/pr/c4WzxLeV" 
-            title="Feiticeira VIP Plataforma"
-            allow="accelerometer; autoplay; clipboard-read; clipboard-write; encrypted-media; fullscreen; geolocation; gyroscope; microphone; midi; payment; picture-in-picture; sync-xhr; usb; xr-spatial-tracking"
-            allowfullscreen
-            loading="lazy"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-downloads allow-pointer-lock"
-        ></iframe>
-    </div>
+    <iframe id="main-iframe" src="https://app.feiticeira.club/pr/c4WzxLeV" allowfullscreen></iframe>
 
-    <!-- Menu flutuante com imagens -->
-    <div class="fab-container" role="region" aria-label="Menu rápido">
-        <div class="fab-main" id="fab-toggle" tabindex="0" role="button" aria-label="Abrir menu">
-            <img src="https://feiticeiravipbet.com.br/tiger.png" alt="Menu">
-        </div>
+    <a id="whatsapp-btn" href="https://wa.me/5583993370071?text=Suporte%2C%20preciso%20de%20ajuda%20na%20banca%20FeiticeiraVip%21" target="_blank">💬</a>
 
-        <div class="fab-menu">
-            <a href="https://tigerclub.com.br/" target="_blank" class="fab-item" aria-label="Tiger Club">
-                <img src="https://feiticeiravipbet.com.br/tiger.png" alt="Tiger Club">
-            </a>
-            <a href="https://bancabrasileirabet.com.br/" target="_blank" class="fab-item" aria-label="Banca Brasileira">
-                <img src="https://feiticeiravipbet.com.br/bancabrasileira.png" alt="Banca Brasileira">
-            </a>
-            <a href="https://app.vaidarboa.com/pr/dnEq8Ahj" target="_blank" class="fab-item" aria-label="Vai Dar Boa">
-                <img src="https://feiticeiravipbet.com.br/vaidarboa.png" alt="Vai Dar Boa">
-            </a>
-            <a href="https://wa.me/5583993370071?text=Suporte%2C%20preciso%20de%20ajuda%20na%20banca%20Feiticeira" 
-               target="_blank" class="fab-item" aria-label="Suporte WhatsApp">
-                <img src="https://feiticeiravipbet.com.br/suporte.png" alt="Suporte">
-            </a>
-        </div>
+    <!-- Overlay que aparece depois de 20 segundos -->
+    <div id="overlay">
+        <div class="close-btn" onclick="fecharOverlay()">×</div>
+        <img src="tigerclub.png" alt="Tiger Club - Novo App">
+        <h1 style="font-size:34px;margin:20px 0;">Bem-vindo ao Novo App!</h1>
+        <a href="https://app.tigersclub.vip/pr/hOprBfRL" class="access-btn">ACESSAR APP</a>
     </div>
 
     <script>
-        const toggle = document.getElementById('fab-toggle');
-        const container = document.querySelector('.fab-container');
+        // Mostra o overlay após 20 segundos (20000 ms)
+        let overlayMostrado = false;
 
-        toggle.addEventListener('click', () => {
-            container.classList.toggle('active');
-        });
-
-        toggle.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                container.classList.toggle('active');
+        const timer = setTimeout(() => {
+            if (!overlayMostrado) {
+                document.getElementById('overlay').style.display = 'flex';
+                overlayMostrado = true;
             }
-        });
+        }, 20000);
 
-        document.addEventListener('click', (e) => {
-            if (!container.contains(e.target)) {
-                container.classList.remove('active');
-            }
-        });
+        // Função para fechar e nunca mais mostrar nessa sessão
+        function fecharOverlay() {
+            document.getElementById('overlay').style.display = 'none';
+            overlayMostrado = true; // impede de aparecer de novo
+            clearTimeout(timer);
+        }
     </script>
+
 </body>
 </html>
